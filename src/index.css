@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-surface: #030508;
+  --color-surface-dim: #05070a;
+  --color-surface-bright: #12151b;
+  --color-surface-container-lowest: #010204;
+  --color-surface-container-low: #080a0f;
+  --color-surface-container: #0c0e14;
+  --color-surface-container-high: #151821;
+  --color-surface-container-highest: #1e222e;
+  
+  --color-on-surface: #e2e8f0;
+  --color-on-surface-variant: #64748b;
+  
+  --color-primary: #22d3ee;
+  --color-on-primary: #083344;
+  --color-primary-container: rgba(34, 211, 238, 0.1);
+  --color-on-primary-container: #22d3ee;
+  
+  --color-secondary: #9333ea;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: rgba(147, 51, 234, 0.1);
+  
+  --color-outline: #334155;
+  --color-outline-variant: #1e293b;
+  
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cyan-glow {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.bg-cyber-gradient {
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.05) 0%, transparent 100%);
+}
+

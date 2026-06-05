@@ -1,0 +1,6 @@
+{
+  "name": "V-Drive Pro",
+  "description": "Professional fleet management and predictive maintenance platform with real-time health monitoring and cost analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
